@@ -1,0 +1,22 @@
+:host {
+    display: block;
+    border: 1px solid black;
+    margin: 8px;
+    padding: 8px;
+}
+
+:host-context(.theme-red) h2 {
+    color: red;
+}
+
+:host-context(.theme-green) h2 {
+    color: green;
+}
+
+p {
+    font-style: italic;
+}
+
+:host /deep/ p {
+    text-decoration: underline;
+}
