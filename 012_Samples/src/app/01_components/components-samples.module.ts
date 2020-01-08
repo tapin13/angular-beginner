@@ -6,7 +6,11 @@ import {
     CounterHostComponent,
     CounterComponent,
     TimerHostComponent,
-    TimerComponent
+    TimerComponent,
+    NameCardHostComponent,
+    NameCardComponent,
+    MessageBoxHostComponent,
+    MessageBoxComponent
 } from './index';
 
 @NgModule({
@@ -17,7 +21,11 @@ import {
         CounterHostComponent,
         CounterComponent,
         TimerHostComponent,
-        TimerComponent
+        TimerComponent,
+        NameCardHostComponent,
+        NameCardComponent,
+        MessageBoxHostComponent,
+        MessageBoxComponent
     ]
 })
 export class ComponentsSamplesModule {

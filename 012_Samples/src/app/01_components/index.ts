@@ -4,3 +4,7 @@ export * from './02_input/counter-host.component';
 export * from './02_input/counter.component';
 export * from './03_output/timer-host.component';
 export * from './03_output/timer.component';
+export * from './04_properties/namecard-host.component';
+export * from './04_properties/namecard.component';
+export * from './05_projection/messagebox-host.component';
+export * from './05_projection/messagebox.component';
