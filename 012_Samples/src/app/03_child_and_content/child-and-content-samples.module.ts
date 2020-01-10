@@ -5,6 +5,9 @@ import {
     BlockHostComponent,
     Block2Component,
     Block2HostComponent,
+    ListComponent,
+    ListHostComponent,
+    ItemComponent,
 } from './index';
 
 @NgModule({
@@ -14,6 +17,9 @@ import {
         BlockHostComponent,
         Block2Component,
         Block2HostComponent,
+        ListComponent,
+        ListHostComponent,
+        ItemComponent,
     ]
 })
 export class ComponentsSamplesModule3 {

@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 
 import { BookComponent, CounterHostComponent, TimerHostComponent, NameCardHostComponent, MessageBoxHostComponent } from './01_components';
 import { Sample1HostComponent, Sample2HostComponent, Sample3HostComponent, Sample4HostComponent } from './02_lifecycle';
-import { BlockHostComponent, Block2HostComponent } from './03_child_and_content';
+import { BlockHostComponent, Block2HostComponent, ListHostComponent } from './03_child_and_content';
 
 export const routes: Routes = [
     { path: "", redirectTo: "01_styles", pathMatch: "full" },
@@ -17,4 +17,5 @@ export const routes: Routes = [
     { path: "04_allevents", component: Sample4HostComponent },
     { path: "01_child", component: BlockHostComponent },
     { path: "02_children", component: Block2HostComponent },
+    { path: "03_content", component: ListHostComponent },
 ];
