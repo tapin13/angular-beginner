@@ -4,3 +4,5 @@ export * from './02_ngOnChanges/sample2-host.component';
 export * from './02_ngOnChanges/sample2.component';
 export * from './03_ngOnChanges/sample3-host.component';
 export * from './03_ngOnChanges/sample3.component';
+export * from './04_allEvents/sample4-host.component';
+export * from './04_allEvents/sample4.component';

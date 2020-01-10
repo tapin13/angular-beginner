@@ -7,6 +7,8 @@ import {
     Sample2HostComponent,
     Sample3Component,
     Sample3HostComponent,
+    Sample4Component,
+    Sample4HostComponent,
 } from './index';
 
 @NgModule({
@@ -18,7 +20,9 @@ import {
         Sample2HostComponent,
         Sample3Component,
         Sample3HostComponent,
-        ]
+        Sample4Component,
+        Sample4HostComponent,
+    ]
 })
 export class ComponentsSamplesModule2 {
 
