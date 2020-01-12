@@ -1,0 +1,14 @@
+x: <input type="text" 
+    [value]="currentValue"
+    (input)="currentValue = $event.target.value"
+/>
+
+{{currentValue}}
+
+x: <input type="text" 
+    [ngModel]="currentValue"
+    (ngModelChange)="currentValue = $event"
+/>
+
+{{currentValue}}
+

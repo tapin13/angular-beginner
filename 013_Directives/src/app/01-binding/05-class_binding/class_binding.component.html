@@ -1,0 +1,14 @@
+<div [class]="currentClasses">Hello world #1</div>
+<button (click)="toggleAllClasses()">toggle All Classes</button>
+
+<hr />
+
+<div 
+    [class.accent-border]="isAccentBorder"
+    [class.error-text]="isErrorText"
+    [class.highlighted]="isHighlighted"
+>
+    Hello world #2</div>
+<button (click)="accentBorder()">accentBorder</button>
+<button (click)="errorText()">errorText</button>
+<button (click)="highlighted()">highlighted</button>

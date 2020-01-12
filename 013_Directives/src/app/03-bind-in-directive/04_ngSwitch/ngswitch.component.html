@@ -1,0 +1,19 @@
+<div [ngSwitch]="choise">
+    <div *ngSwitchCase="'1'">
+        Option 1
+    </div>
+    <div *ngSwitchCase="'2'">
+        Option 2
+    </div>
+    <div *ngSwitchCase="'3'">
+        Option 3
+    </div>
+    <div *ngSwitchCase="'4'">
+        Option 4
+    </div>
+    <div *ngSwitchDefault>
+        Default
+    </div>
+</div>
+
+Make your choise <input type="text" [(ngModel)]="choise" />

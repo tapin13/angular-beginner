@@ -1,0 +1,9 @@
+x: <input type="number" id="x" [(ngModel)]="x" />
+y: <input type="number" id="y" [(ngModel)]="y" />
+
+<button (click)="calculate()">Calculate</button>
+<button (click)="reset()">Reset</button>
+
+<div>
+    Result: {{result}}
+</div>
