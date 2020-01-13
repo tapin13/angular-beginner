@@ -4,6 +4,7 @@ import { InterpolationComponent, PropertyBindingComponent, EventBindingComponent
     AttributeBindingComponent, ClassBindingComponent, StyleBindingComponent } from './01-binding';
 import { CalcComponent, Calc2Component } from './02-two-way-binding';
 import { NgClassComponent, NgStyleComponent, NgIfComponent, NgSwitchComponent, NgForComponent } from './03-bind-in-directive';
+import { NgIfTemplateComponent, NgSwitchTemplateComponent, NgForTemplateComponent, RefVarTemplateComponent } from './04-templates';
 
 export const routes: Routes = [
     { path: "", redirectTo: "01_interpolation", pathMatch: "full" },
@@ -22,4 +23,9 @@ export const routes: Routes = [
     { path: "03_ngIf", component: NgIfComponent },
     { path: "04_ngSwitch", component: NgSwitchComponent },
     { path: "05_ngFor", component: NgForComponent },
+
+    { path: "01_ngIfTemplate", component: NgIfTemplateComponent },
+    { path: "02_ngSwitchTemplate", component: NgSwitchTemplateComponent },
+    { path: "03_ngForTemplate", component: NgForTemplateComponent },
+    { path: "04_refVarTemplate", component: RefVarTemplateComponent },
 ];
