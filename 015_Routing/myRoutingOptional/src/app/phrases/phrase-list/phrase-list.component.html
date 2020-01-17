@@ -1,0 +1,8 @@
+<p>phrase-list works!</p>
+
+<ul class="phrases">
+  <li *ngFor="let phrase of phrases" 
+    (click)="onSelect(phrase)"
+    [class.selected]='isSelected(phrase)'
+    >{{phrase.value}}</li>
+</ul>
