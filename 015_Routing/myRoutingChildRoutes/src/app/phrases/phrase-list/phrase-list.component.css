@@ -1,0 +1,11 @@
+li {
+    padding: 5px;
+}
+
+li:hover {
+    background-color: yellow;
+}
+
+li.selected {
+    background-color: red;
+}
