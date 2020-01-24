@@ -1,0 +1,8 @@
+
+
+<input #textbox (keyup.enter)="onKey(textbox.value)" />
+<button (click)="onKey(textbox.value)">Add</button>
+
+<ul>
+    <li *ngFor="let item of list">{{item}}</li>
+</ul>
