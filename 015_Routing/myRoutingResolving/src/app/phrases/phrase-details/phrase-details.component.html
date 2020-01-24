@@ -1,0 +1,9 @@
+<p>phrase-details works!</p>
+
+<div *ngIf="phrase">
+    <h2>Selected Phrase</h2>
+    Value: <input type="text" [(ngModel)]="editValue" />
+    Language: <input type="text" [(ngModel)]="editLanguage" />
+    <button (click)="goToPhraseList()">Cancel</button>
+    <button (click)="save()">Save</button>
+</div>
