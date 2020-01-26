@@ -1,0 +1,31 @@
+<div class="containter">
+    <h3>User Registration</h3>
+
+    <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name" #name="ngModel" minlength="4" />
+            <div *ngIf="formErrors.name" class="alert alert-danger">
+                {{formErrors.name}}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" class="form-control" id="age" required [(ngModel)]="model.age" name="age" #age="ngModel" />
+            <div *ngIf="formErrors.age" class="alert alert-danger">
+                {{formErrors.age}}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="role">Role</label>
+            <select class="form-control" id="role" required [(ngModel)]="model.role" name="role" #role="ngModel">
+                <option *ngFor="let role of roles" [value]="role">{{role}}</option>
+            </select>
+            <div [hidden]="role.valid || role.pristine" class="alert alert-danger">
+                Field Role is required
+            </div>
+        </div>
+
+        <button type="submit" style="btn btn-default" [disabled]="!userForm.form.valid">Submit</button>
+    </form>
+</div>

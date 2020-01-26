@@ -1,0 +1,27 @@
+<div class="containter">
+    <h3>User Registration</h3>
+
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name" />
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" class="form-control" id="age" required [(ngModel)]="model.age" name="age" />
+        </div>
+        <div class="form-group">
+            <label for="role">Role</label>
+            <select class="form-control" id="role" required [(ngModel)]="model.role" name="role">
+                <option *ngFor="let role of roles" [value]="role">{{role}}</option>
+            </select>
+        </div>
+
+        <button type="submit">Submit</button>
+
+        <p>
+            {{diagnostic}}
+        </p>
+    </form>
+</div>
+

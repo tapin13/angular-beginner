@@ -1,0 +1,33 @@
+<div class="containter">
+    <h3>User Registration</h3>
+
+    <form (ngSubmit)="onSubmit()" #userform="ngForm">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name" #name="ngModel" minlength="4" />
+            <div *ngIf="name.errors && (name.dirty || name.touched)" class="alert alert-danger">
+                <div [hidden]="!name.errors.required">Field Name is required</div>
+                <div [hidden]="!name.errors.minlength">Field Name min length 4</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" class="form-control" id="age" required [(ngModel)]="model.age" name="age" #age="ngModel" />
+            <div [hidden]="age.valid || age.pristine" class="alert alert-danger">
+                Field Age is required
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="role">Role</label>
+            <select class="form-control" id="role" required [(ngModel)]="model.role" name="role" #role="ngModel">
+                <option *ngFor="let role of roles" [value]="role">{{role}}</option>
+            </select>
+            <div [hidden]="role.valid || role.pristine" class="alert alert-danger">
+                Field Role is required
+            </div>
+        </div>
+
+        <button type="submit" style="btn btn-default" [disabled]="!userform.form.valid">Submit</button>
+    </form>
+</div>
+
