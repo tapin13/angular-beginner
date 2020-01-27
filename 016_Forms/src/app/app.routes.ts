@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 
 import { EventsComponent, EventsObjectComponent, TemplateRefComponent, KeyEnterComponent, BlurComponent, MyListComponent } from './01_input/index';
 import { UserFormComponent, UserForm2Component, UserForm3Component, UserForm4Component, UserForm5Component, UserForm6Component, UserForm7Component } from './02_forms';
+import { FormControlSampleComponent, FormControlSample2Component, FormControlSample3Component, FormControlSample4Component, FormControlSample5Component } from './03_reactive_forms';
 
 export const routes: Routes = [
     { path: "", redirectTo: "01_events", pathMatch: "full" },
@@ -18,5 +19,10 @@ export const routes: Routes = [
     { path: "05_form_few_errors", component: UserForm5Component },
     { path: "06_form_submit", component: UserForm6Component },
     { path: "07_form_code_message", component: UserForm7Component },
+    { path: "01_form_control", component: FormControlSampleComponent },
+    { path: "02_form_control_validation", component: FormControlSample2Component },
+    { path: "03_form_builder", component: FormControlSample3Component },
+    { path: "04_form_reactive", component: FormControlSample4Component },
+    { path: "05_form_custome_validation", component: FormControlSample5Component },
 
 ];

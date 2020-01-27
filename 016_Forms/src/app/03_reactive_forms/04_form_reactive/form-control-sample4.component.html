@@ -1,0 +1,38 @@
+<div class="containter">
+    <h3>User Login</h3>
+
+    <form (ngSubmit)="onSubmit(userForm)" [formGroup]="userForm" novalidate>
+        <div class="form-group">
+            <label for="name">name</label>
+            <input type="text" class="form-control" id="name" formControlName="name" />
+            <div *ngIf="formErrors.name" class="alert alert-danger">
+                {{formErrors.name}}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">email</label>
+            <input type="text" class="form-control" id="email" formControlName="email" />
+            <div *ngIf="formErrors.email" class="alert alert-danger">
+                {{formErrors.email}}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="role">role</label>
+            <select class="form-control" id="role" required formControlName="role">
+                <option *ngFor="let role of roles" [value]="role">{{role}}</option>
+            </select>
+            <div *ngIf="formErrors.role" class="alert alert-danger">
+                {{formErrors.role}}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="age">age</label>
+            <input type="text" class="form-control" id="age" formControlName="age" />
+            <div *ngIf="formErrors.age" class="alert alert-danger">
+                {{formErrors.age}}
+            </div>
+        </div>        
+
+        <button type="submit" style="btn btn-light" [disabled]="userForm.invalid">Login</button>
+    </form>
+</div>
