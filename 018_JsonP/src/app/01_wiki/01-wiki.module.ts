@@ -1,18 +1,15 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from '@angular/forms';
-import { AppComponent, App2Component, App3Component, App4Component } from "./index";
+import { WikiComponent } from "./index";
 
 @NgModule({
     declarations: [
-        AppComponent,
-        App2Component,
-        App3Component,
-        App4Component
+        WikiComponent,
     ],
     imports: [
         CommonModule,
         FormsModule
     ]
 })
-export class MyHTTPModule {}
+export class WikiModule {}

@@ -1,0 +1,8 @@
+Search <input type="text" #tb/>
+<button (click)="search(tb.value)">Go</button>
+
+<div *ngFor="let item of items">
+    <a href="{{item.link}}">{{item.name}}</a>
+    <br/>
+    {{item.description}}
+</div>
