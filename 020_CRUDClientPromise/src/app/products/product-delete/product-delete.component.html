@@ -1,0 +1,14 @@
+delete
+
+<div *ngIf="errorMessage">
+    {{errorMessage}}
+</div>
+
+<div>
+    Are you sure want to delete:
+    Name: {{currentProduct?.name}}
+    Price: {{currentProduct?.price}}
+</div>
+
+<button (click)="goBack()">Cancel</button>
+<button (click)="deleteProduct()">Delete</button>
