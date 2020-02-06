@@ -1,0 +1,27 @@
+<div class="container">
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit(productForm)"  novalidate>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" type="text" formControlName="name" />
+            <div *ngIf="checkError('name', 'required')">
+                Field must be filled
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input id="price" type="text" formControlName="price" />
+            <div *ngIf="checkError('price', 'required')">
+                Field must be filled
+            </div>
+        </div>
+        
+        <div *ngIf="errorMessage">
+            {{errorMessage}}
+        </div>
+
+        <div>
+            <button (click)="goBack()">Cancel</button>
+            <button type="submit" [disabled]="!productForm.valid">Save</button>
+        </div>
+    </form>
+</div>

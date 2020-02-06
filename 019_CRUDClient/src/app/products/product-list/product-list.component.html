@@ -1,0 +1,26 @@
+<h2>Product list</h2>
+
+<p>
+    <button (click)="createProduct()">Create</button>
+    <button (click)="refresh()">Refresh</button>
+</p>
+
+<div *ngIf="errorMessage">
+    {{errorMessage}}
+</div>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let product of products">
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        <td>
+            <button (click)="editProduct(product)">Edit</button>
+            <button (click)="deleteProduct(product)">Delete</button>
+        </td>
+    </tr>
+</table>
